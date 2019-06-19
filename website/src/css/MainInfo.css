@@ -1,0 +1,42 @@
+.MainInfo_Wrapper{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+}
+
+img.kevin{
+    max-width:150px;
+    max-height:150px;
+    border-radius:75px;
+}
+
+.MainInfo_Text{
+    text-align:center;
+}
+
+h1{
+    text-decoration: underline;
+    font-size:20px;
+}
+h2{
+    font-size:18px;
+}
+p{
+    font-size:13px;
+    color:rgb(150, 145, 145);
+}
+
+.MainInfo_Icons>img{
+    width:30px;
+    height:25px;
+    margin:10px;
+}
+
+button{
+    margin-top:10px;
+    background:import kevin from '../images/kevin.jpg';
+    border-radius:15px;
+    border:solid 2px black;
+}
