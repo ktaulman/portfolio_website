@@ -1,5 +1,4 @@
 .MainInfo_Wrapper{
-
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -21,22 +20,39 @@ h1{
     font-size:20px;
 }
 h2{
-    font-size:18px;
+    font-size:16px;
 }
 p{
     font-size:13px;
     color:rgb(150, 145, 145);
 }
+.MainInfo_Icons{
+    display:flex;
+    flex-direction:row;
+    margin:20px;
+}
 
-.MainInfo_Icons>img{
-    width:30px;
+.MainInfo_Icons>div{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   padding:0px 10px 0px 10px ;
+
+}
+
+.MainInfo_Icons>div>img{
+    width:25px;
     height:25px;
-    margin:10px;
 }
 
 button{
     margin-top:10px;
-    background:import kevin from '../images/kevin.jpg';
-    border-radius:15px;
-    border:solid 2px black;
+    background:none;
+    padding:6px;
+    border:none;
+    border-radius:5px;
+    color:#881728;
+    font-weight:bold;
+    font-family:'Montserrat';
 }

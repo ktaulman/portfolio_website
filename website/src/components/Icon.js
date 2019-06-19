@@ -3,7 +3,10 @@ import '../css/icon.css'
 
 function Icon (props){
     return(
-        <img src={props.src} alt=""/>
+        <div>
+            <img src={props.src} alt=""/>
+             <p>{props.name}</p>
+        </div>
     )
 
 

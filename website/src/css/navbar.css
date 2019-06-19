@@ -1,20 +1,21 @@
 nav{
-    background:deepskyblue;
+    background:	#172888;
     display:flex;
     justify-content:space-around;
     align-items: center;
+    height:70px;
 }
 
 a{
     font-size:15px;
-    color:white;
+    color:#ffffff;
     text-decoration:none;
 }
 a:hover{
     font-size:22px;
 }
 
-nav>img{
+nav>div>img{
     width:100px;
     height:100px;
 }

@@ -25,11 +25,11 @@ class MainInfo extends React.Component{
                     <p>I'm on a self-taught journey studying everyday!</p>
                 </div>
                 <div className="MainInfo_Icons">
-                    <Icon src={linkedin}/>
-                    <Icon src={github}/>
-                    <Icon src={twitter}/>
-                    <Icon src={resume}/>
-                    <Icon src={calendar}/>
+                    <Icon src={linkedin} name="Career"/>
+                    <Icon src={github} name="Work"/>
+                    <Icon src={twitter} name="Tweets"/>
+                    <Icon src={resume} name="Resume"/>
+                    <Icon src={calendar} name="Progress"/>
                 </div>
                 <div className="MainInfo_Contact">
                     <button>Contact Me</button>
