@@ -9,7 +9,7 @@ class NavBar extends React.Component{
     render(){
         return(
             <nav>
-                <Icon src={logo} alt=""/>
+                <img className="logo" src={logo} alt=""/>
                 <Link linkName="Work"/>
                 <Link linkName="Resume"/>
                 <Link linkName="About Me"/>
