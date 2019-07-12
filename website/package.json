@@ -2,9 +2,9 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://ktaulman.github.io/portfolio_website",
+  "homepage": "http://ktaulman.github.io/portfolio_website",
   "dependencies": {
-    "browserslist": "^4.6.3",
+    "browserslist": "^4.6.4",
     "fsevents": "^2.0.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -15,24 +15,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist":[],
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
