@@ -1,19 +1,34 @@
 import React from 'react';
 import Link from './Link';
-import logo from '../images/logo.png';
-import Icon from './Icon';
+import logo from '../images/logo.svg';
 import '../css/navbar.css';
 
 class NavBar extends React.Component{
         
     render(){
         return(
-            <nav>
-                <img className="logo" src={logo} alt=""/>
-                <Link linkName="Work"/>
-                <Link linkName="Resume"/>
-                <Link linkName="About Me"/>
-                <Link linkName="Contact" />
+            <nav className="navbar-nav">
+                <img 
+                    className="navbar-logo" 
+                    src={logo} 
+                    alt="website-logo"
+                />
+                <Link 
+                    linkName="Work"
+                    class={"navbar-a"}
+                />
+                <Link 
+                    linkName="Resume"
+                    class={"navbar-a"}
+                />
+                <Link 
+                    linkName="About Me"
+                    class={"navbar-a"}
+                />
+                <Link 
+                    linkName="Contact" 
+                    class={"navbar-a"}
+                />
             </nav>
         )
     }
