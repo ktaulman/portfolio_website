@@ -8,38 +8,71 @@ import Icon from './Icon'
 
 
 function CodingInfo(){
-    const imgStyle={
-        width:'75px',
-        height:'75px',
-        margin:'0',
-        border:"black 3px dashed"
-    }
-
-
-    return(
+  return(
     <div className="codinginfo-wrapper">
-       <div>
-        <h3 className="skills">Skills</h3>
-        <Icon src={javascript}/>
-        <Icon src={css}/>
-        <Icon src={html}/>
-        <Icon src={node}/>
+       <div className="codinginfo-div">
+        <h3 className="codinginfo-h3">
+            Skills
+        </h3>
+        <div className="codinginfo-icons-wrapper">
+            <Icon 
+                src={javascript} 
+                divClass="codinginfo-icons-div"
+                class='codinginfo-icon-image'
+                name="Javascript"
+            />
+
+            <Icon 
+                src={css}
+                divClass="codinginfo-icons-div"
+                class='codinginfo-icon-image'
+                name="CSS"
+            />
+
+            <Icon 
+                src={html}
+                divClass="codinginfo-icons-div"
+                class='codinginfo-icon-image'
+                name="HTML"
+            />
+
+            <Icon 
+                src={node}
+                divClass="codinginfo-icons-div"
+                class='codinginfo-icon-image-node'
+                name="Node.js"
+            />
+        </div>
        </div>
 
-       <div className="focus">
-        <h3 className="focus-h3">Focus</h3>
-        <p className="focus-p"> Mobile-First</p>
-        <p className="focus-p"> Accessibility</p>
-        <p className="focus-p"> Object-Oriented</p>
-        <p className="focus-p"> Always Learning</p>
+       <div className="codinginfo-div">
+            <h3 className="codinginfo-h3">
+                Focus
+            </h3>
+            <p className="codinginfo-focus-p"> 
+                Mobile-First
+            </p>
+            <p className="codinginfo-focus-p"> 
+                Accessibility
+            </p>
+            <p className="codinginfo-focus-p">
+                Object-Oriented
+            </p>
+            <p className="codinginfo-focus-p"> 
+                Always Learning
+            </p>
        </div>
-       <div className="work">
-        <h3 className="work-h3">Work</h3>
-            <p className="work-p">8-Bit Jeopardy</p>
+       <div className="codinginfo-div">
+            <h3 className="codinginfo-h3">
+                Work
+            </h3>
+            <p className="codinginfo-work-p">
+                8-Bit Jeopardy
+            </p>
             <img 
-                className="work-img"
+                className="codinginfo-work-image"
                 src={jeopardy} 
-                style={imgStyle} 
+                
                 alt=''    
             />
 

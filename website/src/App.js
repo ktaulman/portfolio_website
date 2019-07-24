@@ -7,15 +7,17 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      
+
     }
   };
   render(){
     return(
        <div className="App">
           <NavBar />
-          <MainInfo />
-          <CodingInfo />
+          <div className="app-main">
+            <MainInfo />
+            <CodingInfo />
+          </div>
       </div>
 
     )

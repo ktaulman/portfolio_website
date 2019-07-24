@@ -12,34 +12,65 @@ import calendar from '../images/calendar.png';
 //CSS Import 
 
 
-class MainInfo extends React.Component{
-
-
-    render(){
+const MainInfo=(props)=>{
         return(
             <div className="maininfo-wrapper">
-                <img className="maininfo-picture" src={kevin} alt=""/>
+                <img 
+                className="maininfo-picture" 
+                src={kevin} 
+                alt="kevin aka me :)"
+
+                />
+
                 <div className="maininfo-info">
-                    <h1>Kevin Taulman</h1>
-                    <h2>Web Developer & Aspiring Autodidact</h2>
-                    <p>I'm on a self-taught journey studying everyday!</p>
+                    <h1 className="maininfo-info-h1">
+                    Kevin Taulman
+                    </h1>
+                    <h2 className="maininfo-info-h2">
+                    Web Developer & Aspiring Autodidact
+                    </h2>
+                    <p className="maininfo-info-p">I'm on a self-taught journey studying everyday!
+                    </p>
                 </div>
-                <div className="MainInfo_Icons">
-                    <Icon src={linkedin} name="Career"/>
-                    <Icon src={github} name="Work"/>
-                    <Icon src={twitter} name="Tweets"/>
-                    <Icon src={resume} name="Resume"/>
-                    <Icon src={calendar} name="Progress"/>
+
+                <div className="maininfo-icons-container">
+                    <Icon 
+                        src={linkedin} 
+                        name="Career"
+                        divClass="maininfo-icons-div"
+                        class="maininfo-icons-image"
+                    />
+                    <Icon 
+                        src={github} 
+                        name="Work"
+                        divClass="maininfo-icons-div"
+                        class="maininfo-icons-image"
+                    />
+                    <Icon 
+                        src={twitter} 
+                        name="Tweets"
+                        divClass="maininfo-icons-div"
+                        class="maininfo-icons-image"
+                    />
+                    <Icon 
+                        src={resume} 
+                        name="Resume"
+                        divClass="maininfo-icons-div"
+                        class="maininfo-icons-image" 
+                    />
+                    <Icon 
+                        src={calendar} 
+                        name="Algorithm Practice"
+                        divClass="maininfo-icons-div"
+                        class="maininfo-icons-image"  
+                    />
                 </div>
-                <div className="MainInfo_Contact">
+
+                <div className="maininfo-contact">
                     <button>Contact Me</button>
                 </div>
             </div>
         )
     }
 
-
-}
-
-
-export default MainInfo; 
+    export default MainInfo;
