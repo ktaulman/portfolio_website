@@ -16,7 +16,9 @@ body {
 
 
 /* APP.js STYLING */
-
+.App{
+    width:90vw;
+}
 
 /* NAVBAR STYLING */
 .navbar-logo{
@@ -26,10 +28,16 @@ body {
 .navbar-nav{
     background:	#172888;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items:center;
     position:fixed;
-    width:100%;
+    width:100vw;
+}
+.navbar-div{
+    width:80vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
 .navbar-nav-bottom{
@@ -39,16 +47,21 @@ body {
     align-items:center;
     color:white;
     height:125px;
-    width:100%;
+    width:100vw;
     margin-top:15px;
     font-size:25px;
 }
-
+.navbar-nav-bottom>p{
+    width:20vw;
+    word-wrap: break-word;
+    text-align:center;
+}
 
 .navbar-a{
     color:white;
     text-decoration:none;
     font:35px;
+    margin-left:10px;
   }
 .navbar-a:hover{
     cursor:pointer;
@@ -144,6 +157,9 @@ body {
     letter-spacing: 3px;
     font-size:25px;
     width:250px;
+}
+.contactform-button{
+    display:none;
 }
 .contactform-button:hover{
     cursor: pointer;
@@ -245,6 +261,9 @@ body {
 
 /* MEDIA QUERIES */
 @media (min-width:1030px){
+    .contactform-button{
+        display:none;
+    }
     .navbar-logo{
         height:90px;
         
@@ -651,6 +670,8 @@ body {
         
     .navbar-a{
         font-size:16px;
+        margin: 0;
+    
     }
     .maininfo-icons-container{
         width:85%;
@@ -733,7 +754,7 @@ body {
     }
         
     .navbar-a{
-        font-size:12px;
+        font-size:8px;
     }
     .maininfo-picture{
         width:125px;
