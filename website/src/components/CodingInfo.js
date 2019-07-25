@@ -72,8 +72,7 @@ function CodingInfo(){
             <img 
                 className="codinginfo-work-image"
                 src={jeopardy} 
-                
-                alt=''    
+                alt='logo for jeopardy game'    
             />
 
        </div>
