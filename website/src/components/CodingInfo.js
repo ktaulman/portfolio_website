@@ -8,6 +8,10 @@ import Icon from './Icon'
 
 
 function CodingInfo(){
+    const openTab=(x)=>{
+        window.open(x,'_newtab');
+        console.log(x);
+     }
   return(
     <div className="codinginfo-wrapper">
        <div className="codinginfo-div">
@@ -72,7 +76,8 @@ function CodingInfo(){
             <img 
                 className="codinginfo-work-image"
                 src={jeopardy} 
-                alt='logo for jeopardy game'    
+                alt='logo for jeopardy game'
+                onClick={()=>openTab('https://ktaulman.github.io/JEOPARDY_GAME/')}    
             />
 
        </div>

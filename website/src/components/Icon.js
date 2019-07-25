@@ -3,7 +3,10 @@ import React from 'react';
 
 function Icon (props){
     return(
-        <div className={props.divClass}>
+        <div 
+            className={props.divClass}
+            onClick={props.onClick}
+            >
             <img 
                 className={props.class}
                 src={props.src} 
