@@ -4,9 +4,13 @@ const ContactForm=(props)=>{
 
 if(props.buttonClicked){
   return(
-    <div className="contactform-wrapper">
+    <div className="contactform-wrapper" >
 
-    <button onClick={props.onClick}className="contactform-button">Contact Me</button>
+    <button 
+      onClick={props.onClick} 
+      className="contactform-button"
+      id="contactform"
+    >Contact Me</button>
 
 
     <form
@@ -37,7 +41,11 @@ else{
 return (
 <div className="contactform-wrapper">
 
-  <button onClick={props.onClick} className="contactform-button">Contact Me</button>
+  <button 
+    onClick={props.onClick} 
+    className="contactform-button"
+    id="contactform"
+  >Contact Me</button>
 
 </div>
 )}

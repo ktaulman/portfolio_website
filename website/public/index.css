@@ -16,7 +16,9 @@ body {
 
 
 /* APP.js STYLING */
-
+.App{
+    width:90vw;
+}
 
 /* NAVBAR STYLING */
 .navbar-logo{
@@ -26,24 +28,36 @@ body {
 .navbar-nav{
     background:	#172888;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items:center;
     position:fixed;
-    width:100%;
+    width:100vw;
+}
+.navbar-div{
+    width:80vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
 .navbar-nav-bottom{
     background:	#172888;
-    display:flex;
-    justify-content: space-evenly;
-    align-items:center;
     color:white;
-    height:125px;
-    width:100%;
+    height:100px;
+    width:100vw;
     margin-top:15px;
     font-size:25px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
+.navbar-nav-bottom>p{
+    width:20%;
+    height:45px;
+    word-wrap: break-word;
+    text-align:center;
+    margin-left:15px;
+}
 
 .navbar-a{
     color:white;
@@ -145,6 +159,9 @@ body {
     font-size:25px;
     width:250px;
 }
+.contactform-button{
+    display:none;
+}
 .contactform-button:hover{
     cursor: pointer;
  }
@@ -241,10 +258,20 @@ body {
     width:85px;
 }
 /*  */
-
+.codinginfo-work-image:hover{
+    width:175px;
+    border:gold 4px solid;
+    padding:5px;
+    cursor:pointer;
+    transition: all .3s ease-in;
+    transform: scale(1.1);
+}
 
 /* MEDIA QUERIES */
 @media (min-width:1030px){
+    .contactform-button{
+        display:none;
+    }
     .navbar-logo{
         height:90px;
         
@@ -342,6 +369,10 @@ body {
         transition: all .3s ease-in;
         transform: scale(1.1);
     }
+    .navbar-nav-bottom{
+        background:	#172888;
+        font-size:16px;
+    }
 }
 
 
@@ -433,6 +464,9 @@ body {
           padding:5px;
          
       }
+      .navbar-nav-bottom{
+        font-size:12px;
+    }
 }
 
 @media (max-width:770px){
@@ -517,6 +551,9 @@ body {
         padding:5px;
        
     }
+    .navbar-nav-bottom{
+        font-size:10px;
+    }
 }
 
 @media (max-width:420px){
@@ -593,6 +630,9 @@ body {
           padding:5px;
          
       }
+      .navbar-nav-bottom{
+        font-size:8px;
+    }
 }
 
  /* iPhone 6/7 */
@@ -607,6 +647,8 @@ body {
         
     .navbar-a{
         font-size:16px;
+        margin: 0;
+    
     }
     .maininfo-icons-container{
         width:85%;
@@ -664,6 +706,9 @@ body {
           padding:5px;
          
       }
+      .navbar-nav-bottom{
+      font-size:8px;
+  }
 }
 
 
@@ -678,7 +723,7 @@ body {
     }
         
     .navbar-a{
-        font-size:12px;
+        font-size:8px;
     }
     .maininfo-picture{
         width:125px;
@@ -732,5 +777,8 @@ body {
         border:black 4px solid;
         padding:5px;
        
+    }
+    .navbar-nav-bottom{
+        font-size:8px;
     }
 }

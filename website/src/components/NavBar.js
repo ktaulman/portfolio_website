@@ -8,6 +8,7 @@ class NavBar extends React.Component{
     render(){
         return(
             <nav className="navbar-nav">
+                <div className="navbar-div">
                 <img 
                     className="navbar-logo" 
                     src={logo} 
@@ -28,10 +29,12 @@ class NavBar extends React.Component{
                     class={"navbar-a"}
                     href={"https://www.linkedin.com/in/ktaulman/"}
                 />
-                <Link 
+                {/* <Link 
                     linkName="Contact" 
                     class={"navbar-a"}
-                />
+                    href={"#contactform"}
+                /> */}
+                </div>
             </nav>
         )
     }

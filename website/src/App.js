@@ -21,7 +21,7 @@ class App extends React.Component{
     return(
        <div className="App">
           <NavBar />
-          <div className="app-main">
+  
             <MainInfo />
             <ContactForm
               buttonClicked={this.state.buttonClicked}
@@ -29,7 +29,7 @@ class App extends React.Component{
             />
             <CodingInfo/>
           
-          </div>
+          
           <div className='navbar-nav-bottom'>
             <p>kevin.taulman@icloud.com</p>
             <p>408-550-5763</p>

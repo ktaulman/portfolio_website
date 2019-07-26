@@ -2,7 +2,6 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ktaulman.github.io/portfolio_website",
   "dependencies": {
     "browserslist": "^4.6.4",
     "fsevents": "^2.0.7",

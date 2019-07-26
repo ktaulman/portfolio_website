@@ -4,7 +4,7 @@ function Link(props) {
     return(
     <a 
     href={props.href}
-    target="_blank"
+    target={props.href==="#contactform"?'':"_blank"}
     className={props.class}
     rel="noopener noreferrer"
     >
