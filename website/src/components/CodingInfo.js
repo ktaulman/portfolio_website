@@ -1,10 +1,15 @@
 import React from 'react';
-import html from '../images/html.png';
-import css from '../images/css.png';
-import javascript from '../images/javascript.png';
-import node from '../images/node.png';
-import jeopardy from '../images/jeopardy.png';
+import html from '../images/html.svg';
+import css from '../images/css.svg';
+import javascript from '../images/javascript-svg.svg';
+import node from '../images/node.svg';
+import jeopardy from '../images/jeopardy.svg';
+import react from '../images/react.svg';
+import brain from '../images/brain.svg';
+
+
 import Icon from './Icon'
+import WorkIcon from './WorkIcon';
 
 
 function CodingInfo(){
@@ -18,7 +23,7 @@ function CodingInfo(){
         <h3 className="codinginfo-h3">
             Skills
         </h3>
-        <div className="codinginfo-icons-wrapper">
+        <div className="codinginfo-skills-wrapper">
             <Icon 
                 src={javascript} 
                 divClass="codinginfo-icons-div"
@@ -42,9 +47,15 @@ function CodingInfo(){
 
             <Icon 
                 src={node}
-                divClass="codinginfo-icons-div"
+                divClass="codinginfo-icons-div-node"
                 class='codinginfo-icon-image-node'
                 name="Node.js"
+            />
+            <Icon 
+                src={react}
+                divClass="codinginfo-icons-div"
+                class='codinginfo-icon-image'
+                name="React.js"
             />
         </div>
        </div>
@@ -70,16 +81,29 @@ function CodingInfo(){
             <h3 className="codinginfo-h3">
                 Work
             </h3>
-            <p className="codinginfo-work-p">
-                8-Bit Jeopardy
-            </p>
-            <img 
-                className="codinginfo-work-image"
-                src={jeopardy} 
-                alt='logo for jeopardy game'
-                onClick={()=>openTab('https://ktaulman.github.io/JEOPARDY_GAME/')}    
-            />
-
+           <div className="codinginfo-work-wrapper">
+                
+                <WorkIcon
+                    name="16-Bit Jeopardy"
+                    description="Powered by React"
+                    className="codinginfo-work-icon"
+                    divClass='codinginfo-work-div'
+                    class='codinginfo-work-image'
+                    src={jeopardy}
+                    alt="push to open Jeopardy game"
+                    onClick={()=>openTab('https://ktaulman.github.io/JEOPARDY_GAME/')} 
+                />
+                 <WorkIcon
+                    name="Facial Recognition App"
+                    description="Powered by Clarifai API and React"
+                    className="codinginfo-work-icon"
+                    divClass='codinginfo-work-div'
+                    class='codinginfo-work-image'
+                    src={brain}
+                    alt="push to open Brain App game"
+                    onClick={()=>openTab('https://ktaulman.github.io/brainapp/')} 
+                />
+            </div>
        </div>
     </div>
 )

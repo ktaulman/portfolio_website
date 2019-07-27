@@ -29,11 +29,11 @@ class NavBar extends React.Component{
                     class={"navbar-a"}
                     href={"https://www.linkedin.com/in/ktaulman/"}
                 />
-                {/* <Link 
+                <Link 
                     linkName="Contact" 
                     class={"navbar-a"}
                     href={"#contactform"}
-                /> */}
+                />
                 </div>
             </nav>
         )

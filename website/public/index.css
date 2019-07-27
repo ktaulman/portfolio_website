@@ -17,7 +17,8 @@ body {
 
 /* APP.js STYLING */
 .App{
-    width:90vw;
+    width:100vw;
+    margin:0 auto;
 }
 
 /* NAVBAR STYLING */
@@ -28,7 +29,7 @@ body {
 .navbar-nav{
     background:	#172888;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items:center;
     position:fixed;
     width:100vw;
@@ -48,16 +49,10 @@ body {
     margin-top:15px;
     font-size:25px;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
 }
-.navbar-nav-bottom>p{
-    width:20%;
-    height:45px;
-    word-wrap: break-word;
-    text-align:center;
-    margin-left:15px;
-}
+
 
 .navbar-a{
     color:white;
@@ -82,9 +77,8 @@ body {
 
 .maininfo-picture{
     margin:85px 0px 10px 0px;
-    width:275px;
-   border-radius:200px;
-
+    width:300px;
+    border-radius:200px;
 }
 
 .maininfo-info{
@@ -213,46 +207,49 @@ body {
     justify-content:center; 
     align-items: center;
     text-decoration: none;
+    width:100vw;
 }
 .codinginfo-div{
     width:100%;
     text-align:center;
 }
-.codinginfo-icons-wrapper{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:baseline;
-    margin:10px
-}
 
+.codinginfo-skills-wrapper{
+    margin:0 auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width:75vw;
+
+}   
 .codinginfo-icon-image{
-    width:75px;
-    height:auto;
+    height:160 px;
     margin:0;
 }
 
 .codinginfo-icon-image-node{
-    width:auto;
-    height:40px;
+    height:160px;
     margin:0;
 }
-.codinginfo-icons-div{
-    text-align:center;
-    width:100%;
-  
-}
+
 .codinginfo-h3{
     text-decoration:underline;
+    margin-bottom:40px;
+    color:darkblue;
 }
 .codinginfo-focus-p{
     font-size:14px;
     letter-spacing: 1px;
 }
-
-.codinginfo-work-p{
-    font-size:16px;
+.codinginfo-work-wrapper{
+    width:75vw;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
 }
+
 
 .codinginfo-work-image{
     width:85px;
@@ -266,7 +263,9 @@ body {
     transition: all .3s ease-in;
     transform: scale(1.1);
 }
-
+.codinginfo-work-p{
+    font-size:16px;
+}
 /* MEDIA QUERIES */
 @media (min-width:1030px){
     .contactform-button{
@@ -284,7 +283,7 @@ body {
         font-size:28px;
     }
     .maininfo-picture{
-        width:240px;
+        width:300px;
         margin-top:100px;
     }
     .maininfo-info-h1{
@@ -324,7 +323,7 @@ body {
         padding:15px;
         letter-spacing:8px;
       }    
-      .codinginfo-icons-wrapper{
+      .codinginfo-skills-wrapper{
           width:85vw;
           margin:0 auto;
           display:flex;
@@ -333,16 +332,15 @@ body {
           align-items:baseline;
           padding:5px;
       }
-      .codinginfo-icons-div>p{
+      .codinginfo-icons-p{
           font-size:24px;
       }
       .codinginfo-icon-image{
-          width:125px;
-          height:auto;
+        height:160px;
       }
       .codinginfo-icon-image-node{
-          width:125px;
-          height:145px;
+        height:130px;
+        font-size:24px;
       }
       .codinginfo-h3{
           font-size:36px;
@@ -351,10 +349,7 @@ body {
           font-size:24px;
           letter-spacing: 1px;
       } 
-      .codinginfo-work-p{
-          font-size:18px;
-      }
-    
+       
       .codinginfo-work-image{
           width:175px;
           border:black 4px solid;
@@ -371,7 +366,13 @@ body {
     }
     .navbar-nav-bottom{
         background:	#172888;
-        font-size:16px;
+        font-size:24px;
+    }
+    .codinginfo-work-h3{
+        color:darkblue;
+      }
+    .codinginfo-work-p-desc{
+      font-size:18px;
     }
 }
 
@@ -429,7 +430,7 @@ body {
         border:2px solid black;
         padding:5px;
       }    
-      .codinginfo-icons-wrapper{
+      .codinginfo-skills-wrapper{
           width:65vw;
           margin:0 auto;
           display:flex;
@@ -438,12 +439,11 @@ body {
           align-items:baseline;
       }
       .codinginfo-icon-image{
-          width:80px;
-          height:auto;
+        height:180px;
       }
       .codinginfo-icon-image-node{
-          width:95px;
-          height:85px;
+        height:180px;
+        height:150px;
       }
 
       .codinginfo-h3{
@@ -456,7 +456,9 @@ body {
       .codinginfo-work-p{
           font-size:18px;
       }
-    
+      .codinginfo-work-p-desc{
+        font-size:18px;
+    }
       .codinginfo-work-image{
           width:150px;
           height:auto;
@@ -465,13 +467,18 @@ body {
          
       }
       .navbar-nav-bottom{
-        font-size:12px;
+        font-size:20px;
+    }
+    .codinginfo-work-h3{
+    }
+    .codinginfo-work-p-desc{
+ 
     }
 }
 
 @media (max-width:770px){
     .navbar-logo{
-        height:75px;
+        height:65px;
         
       }
     .navbar-nav{
@@ -479,7 +486,7 @@ body {
     }
         
     .navbar-a{
-        font-size:24px;
+        font-size:16px;
     }
     .maininfo-picture{
         width:185px;
@@ -520,7 +527,7 @@ body {
         border:2px solid black;
         padding:5px;
       }    
-      .codinginfo-icons-wrapper{
+      .codinginfo-skills-wrapper{
           width:65vw;
           margin:0 auto;
           display:flex;
@@ -529,12 +536,10 @@ body {
           align-items:baseline;
       }
       .codinginfo-icon-image{
-          width:80px;
-          height:auto;
+        height:130px;
       }
       .codinginfo-icon-image-node{
-          width:95px;
-          height:85px;
+        height:130px;
       }
       .codinginfo-focus-p{
           font-size:14px;
@@ -552,17 +557,36 @@ body {
        
     }
     .navbar-nav-bottom{
-        font-size:10px;
+        font-size:12px;
     }
+    .navbar-nav-bottom>p{
+        word-wrap: break-word;
+        width:30vw;
+    }
+    .codinginfo-work-p-desc{
+        font-size:18px;
+    }
+    .codinginfo-skills-wrapper{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+      }
+      .codinginfo-work-wrapper{
+        transform: scale(.8);
+      }
+      .codinginfo-work-div{
+          margin:10px;
+      }
 }
 
 @media (max-width:420px){
     .navbar-logo{
-        height:40px;
+        height:50px;
         
       }
     .navbar-nav{
-        height:50px;
+        height:55px;
     }
         
     .navbar-a{
@@ -603,25 +627,28 @@ body {
         border:2px solid black;
         padding:7px;
       }    
-      .codinginfo-icons-wrapper{
+      .codinginfo-skills-wrapper{
           width:80%;
           display:flex;
-          justify-content: space-evenly;
+            flex-direction:column;
+          justify-content: center;
+          align-items:center;
       }
     
       .codinginfo-icon-image{
-          width:45px;
+        height:120px;
       }
       .codinginfo-icon-image-node{
-          width:60px;
-          height:45px;
+        
+        height:100px;
+     
       }
       .codinginfo-focus-p{
           font-size:14px;
           letter-spacing: 1px;
       } 
-      .codinginfo-work-p{
-          font-size:16px;
+      .codinginfo-work-p-desc{
+          font-size:12px;
       }
     
       .codinginfo-work-image{
@@ -630,8 +657,13 @@ body {
           padding:5px;
          
       }
+      .codinginfo-skills-wrapper{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+      }
       .navbar-nav-bottom{
-        font-size:8px;
+        font-size:12px;
     }
 }
 
@@ -646,7 +678,7 @@ body {
     }
         
     .navbar-a{
-        font-size:16px;
+        font-size:10px;
         margin: 0;
     
     }
@@ -685,12 +717,17 @@ body {
         border:2px solid black;
         padding:5px;
       }    
+      .codinginfo-skills-wrapper{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+      }
     
       .codinginfo-icon-image{
-          width:45px;
+        height:100px;
       }
       .codinginfo-icon-image-node{
-          width:60px;
+        height:100px;
       }
       .codinginfo-focus-p{
           font-size:14px;
@@ -707,7 +744,7 @@ body {
          
       }
       .navbar-nav-bottom{
-      font-size:8px;
+      font-size:12px;
   }
 }
 
@@ -759,10 +796,11 @@ body {
     }    
   
     .codinginfo-icon-image{
-        width:45px;
+        height:100px;
     }
     .codinginfo-icon-image-node{
-        width:60px;
+        height:100px;
+  
     }
     .codinginfo-focus-p{
         font-size:14px;
@@ -778,7 +816,12 @@ body {
         padding:5px;
        
     }
+    .codinginfo-skills-wrapper{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+      }
     .navbar-nav-bottom{
-        font-size:8px;
+        font-size:10px;
     }
 }

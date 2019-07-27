@@ -4,10 +4,10 @@ import Icon from './Icon';
 
 //PHOTO IMPORTS
 import kevin from '../images/kevin.jpg';
-import linkedin from '../images/linkedin.png';
-import github from '../images/github.png';
-import twitter from '../images/twitter.png';
-import resume from '../images/resume.png';
+import linkedin from '../images/linkedin.svg';
+import github from '../images/github.svg';
+import twitter from '../images/twitter.svg';
+import resume from '../images/resume.svg';
 //import calendar from '../images/calendar.png';
 //CSS Import 
 

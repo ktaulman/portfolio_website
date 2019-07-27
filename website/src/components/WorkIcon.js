@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Icon (props){
+function WorkIcon (props){
     return(
         <div 
             className={props.divClass}
@@ -12,11 +12,12 @@ function Icon (props){
                 src={props.src} 
                 alt=""/
             >
-             <p className="codinginfo-icons-p">{props.name}</p>
+             <h3 className="codinginfo-work-h3">{props.name}</h3>
+             <p className="codinginfo-work-p-desc">{props.description}</p>
         </div>
     )
 
 
 }
 
-export default Icon; 
+export default WorkIcon; 
