@@ -1,14 +1,15 @@
 import React from 'react';
 
 function Link(props) {
+    const {href,className,text}=props;
     return(
     <a 
-    href={props.href}
-    target={props.href==="#contactform"?'':"_blank"}
-    className={props.class}
-    rel="noopener noreferrer"
+        href={href}
+        target={href==="#contactform"?'':"_blank"}
+        className={className}
+        rel="noopener noreferrer"
     >
-    {props.linkName}
+         {text}
     </a>
     )
 }

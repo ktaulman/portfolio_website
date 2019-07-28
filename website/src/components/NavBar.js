@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from './Link';
+import Logo from './Logo'
 import logo from '../images/logo.svg';
 
 
@@ -7,34 +8,32 @@ class NavBar extends React.Component{
         
     render(){
         return(
-            <nav className="navbar-nav">
-                <div className="navbar-div">
-                <img 
-                    className="navbar-logo" 
+            <nav className="navbar">
+                <Logo 
+                    className="navbar__logo" 
                     src={logo} 
-                    alt="website-logo"
+                    alt="portfolio logo"
                 />
                 <Link 
-                    linkName="Work"
-                    class={"navbar-a"}
+                    text="Work"
+                    className={"navbar__link"}
                     href={"https://github.com/ktaulman"}
                 />
                 <Link 
-                    linkName="Resume"
-                    class={"navbar-a"}
+                    text="Resume"
+                    className={"navbar__link"}
                     href={"https://drive.google.com/open?id=1GggusX9tkaC0D-wuaFB29MdMBA2VaCJ6"}
                 />
                 <Link 
-                    linkName="About Me"
-                    class={"navbar-a"}
+                    text="About Me"
+                    className={"navbar__link"}
                     href={"https://www.linkedin.com/in/ktaulman/"}
                 />
                 <Link 
-                    linkName="Contact" 
-                    class={"navbar-a"}
+                    text="Contact" 
+                    className={"navbar__link"}
                     href={"#contactform"}
                 />
-                </div>
             </nav>
         )
     }

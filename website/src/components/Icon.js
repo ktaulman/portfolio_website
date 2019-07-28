@@ -1,18 +1,19 @@
 import React from 'react';
 
 
-function Icon (props){
+const Icon= (props)=>{
+    const {className,onClick,src,name}=props;
     return(
         <div 
-            className={props.divClass}
-            onClick={props.onClick}
+            className={className}
+            onClick={onClick}
             >
             <img 
-                className={props.class}
-                src={props.src} 
-                alt=""/
-            >
-             <p className="codinginfo-icons-p">{props.name}</p>
+                className="menu__image"
+                src={src} 
+                alt=""
+            />
+             <p className="menu__name">{name}</p>
         </div>
     )
 

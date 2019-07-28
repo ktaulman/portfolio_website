@@ -18,96 +18,74 @@ function CodingInfo(){
         console.log(x);
      }
   return(
-    <div className="codinginfo-wrapper">
-       <div className="codinginfo-div">
-        <h3 className="codinginfo-h3">
-            Skills
-        </h3>
-        <div className="codinginfo-skills-wrapper">
+       
+        <div className="menu --vertical">
+            <h3 className="menu__title">
+                Skills
+            </h3>
             <Icon 
                 src={javascript} 
-                divClass="codinginfo-icons-div"
-                class='codinginfo-icon-image'
+                className="menu__icon"
                 name="Javascript"
             />
 
             <Icon 
                 src={css}
-                divClass="codinginfo-icons-div"
-                class='codinginfo-icon-image'
+                className="menu__icon"
                 name="CSS"
             />
 
             <Icon 
                 src={html}
-                divClass="codinginfo-icons-div"
-                class='codinginfo-icon-image'
+                className="menu__icon"
                 name="HTML"
             />
 
             <Icon 
                 src={node}
-                divClass="codinginfo-icons-div-node"
-                class='codinginfo-icon-image-node'
+                className="menu__icon"
                 name="Node.js"
             />
             <Icon 
                 src={react}
-                divClass="codinginfo-icons-div"
-                class='codinginfo-icon-image'
+                className="menu__icon"
                 name="React.js"
             />
         </div>
-       </div>
+  )}    
+//        
 
-       <div className="codinginfo-div">
-            <h3 className="codinginfo-h3">
-                Focus
-            </h3>
-            <p className="codinginfo-focus-p"> 
-                Mobile-First
-            </p>
-            <p className="codinginfo-focus-p"> 
-                Accessibility
-            </p>
-            <p className="codinginfo-focus-p">
-                Object-Oriented
-            </p>
-            <p className="codinginfo-focus-p"> 
-                Always Learning
-            </p>
-       </div>
-       <div className="codinginfo-div">
-            <h3 className="codinginfo-h3">
-                Work
-            </h3>
-           <div className="codinginfo-work-wrapper">
+//        <div className="codinginfo-work-wrapper">
+//             <h3 className="menu__icon">
+//                 Work
+//             </h3>
+//            <div className="codinginfo-work-div">
                 
-                <WorkIcon
-                    name="16-Bit Jeopardy"
-                    description="Powered by React"
-                    className="codinginfo-work-icon"
-                    divClass='codinginfo-work-div'
-                    class='codinginfo-work-image'
-                    src={jeopardy}
-                    alt="push to open Jeopardy game"
-                    onClick={()=>openTab('https://ktaulman.github.io/JEOPARDY_GAME/')} 
-                />
-                 <WorkIcon
-                    name="Facial Recognition App"
-                    description="Powered by Clarifai API and React"
-                    className="codinginfo-work-icon"
-                    divClass='codinginfo-work-div'
-                    class='codinginfo-work-image'
-                    src={brain}
-                    alt="push to open Brain App game"
-                    onClick={()=>openTab('https://ktaulman.github.io/brainapp/')} 
-                />
-            </div>
-       </div>
-    </div>
-)
-}
+//                 <WorkIcon
+//                     name="16-Bit Jeopardy"
+//                     description="Powered by React"
+//                     className="codinginfo-work-icon"
+//                     className='codinginfo-work-div'
+//                     class='codinginfo-work-image'
+//                     src={jeopardy}
+//                     alt="push to open Jeopardy game"
+//                     onClick={()=>openTab('https://ktaulman.github.io/JEOPARDY_GAME/')} 
+//                 />
+//                  <WorkIcon
+//                     name="Facial Recognition App"
+//                     description="Powered by Clarifai API and React"
+//                     className="codinginfo-work-icon"
+//                     className='codinginfo-work-div'
+//                     class='codinginfo-work-image'
+//                     src={brain}
+//                     alt="push to open Brain App game"
+//                     onClick={()=>openTab('https://ktaulman.github.io/brainapp/')} 
+//                 />
+//             </div>
+//        </div>
+//     </div>
+// )
+// }
 
 
 

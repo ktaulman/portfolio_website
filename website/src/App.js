@@ -1,13 +1,17 @@
 import React from 'react';
 import NavBar from "./components/NavBar";
-import MainInfo from './components/MainInfo'
-import CodingInfo from './components/CodingInfo'
-import ContactForm from './components/ContactForm';
+import BottomBar from "./components/BottomBar";
+import InfoCard from './components/InfoCard';
+import CodingInfo from './components/CodingInfo';
+import Menu from './components/Menu'
+import List from './components/list_data'
+// import ContactForm from './components/ContactForm';
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state={
+      data:[],
       buttonClicked:false,
     }
   };
@@ -17,24 +21,25 @@ class App extends React.Component{
     console.log("button clicked")
   }
 
+  componentWillMount(){
+
+    
+  }
+
   render(){
     return(
        <div className="App">
           <NavBar />
-  
-            <MainInfo />
-            <ContactForm
-              buttonClicked={this.state.buttonClicked}
-              onClick={this.handleClick.bind(this)}  
-            />
+          
+          <main>
+            <InfoCard />
+            <Menu />
             <CodingInfo/>
-          
-          
-          <div className='navbar-nav-bottom'>
-            <p>kevin.taulman@icloud.com</p>
-            <p>408-550-5763</p>
-            <p>3300 Cascade Rd SW, Atlanta, GA, 30311</p>
-          </div>
+            <List />
+            {/* <BottomBar /> */}
+         
+          </main>
+      a
       </div>
 
     )
@@ -42,3 +47,7 @@ class App extends React.Component{
 }
 
 export default App;
+  /* <ContactForm
+              buttonClicked={this.state.buttonClicked}
+              onClick={this.handleClick.bind(this)}  
+            /> */
