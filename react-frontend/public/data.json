@@ -1,0 +1,102 @@
+{
+              "navbar":[
+                { 
+                "name":"Work",
+                "className":"navbar__link",
+                "href":"https://github.com/ktaulman"
+                },
+                { 
+                "name":"Resume",
+                "className":"navbar__link",
+                "href":"https://drive.google.com/open?id=1GggusX9tkaC0D-wuaFB29MdMBA2VaCJ6"
+                },
+                {
+                "name":"About Me",
+                "className":"navbar__link",
+                "href":"https://drive.google.com/open?id=1GggusX9tkaC0D-wuaFB29MdMBA2VaCJ6"
+                },
+                {
+                "name":"Contact", 
+                "className":"navbar__link",
+                "href":"#contactform"         
+                }
+              ],
+            "infocardkevin":[
+              {
+               "src":"/assets/images/kevin.jpg",
+                "title":"Kevin Taulman",
+                "tagline":"Web Developer",
+                "text":"Studying and Self-Teaching Full-Stack"
+              }
+            ],
+            "menu":[
+                  {
+                    "id":"1",
+                    "name":"Career",
+                    "src":"assets/images/linkedin.svg",
+                    "href":"https://www.linkedin.com/in/ktaulman/"
+                  },
+                  {
+                    "id":"2",
+                    "name":"Work",
+                    "src":"assets/images/github.svg",
+                    "href":"https://github.com/ktaulman"
+                  },
+                  {
+                    "id":"3",
+                    "name":"Tweets",
+                    "src":"assets/images/twitter.svg",
+                    "href":"https://twitter.com/kevintaulman?lang=en"
+                  },
+                  {
+                    "id":"4",
+                    "name":"Resume",
+                    "src":"assets/images/resume.svg",
+                    "href":"https://drive.google.com/file/d/1Wwr3Ls6boLP_OGR9yVpQHA5DSRxYGGec/view?usp=sharing"
+                  }
+              ],
+              "skillsmenu":[
+                {
+                  "name":"HTML",
+                  "src":"assets/images/html.svg"
+                },
+                {
+                  "name":"CSS",
+                  "src":"assets/images/css.svg"
+                },
+                {
+                  "name":"Javascript",
+                  "src":"assets/images/javascript.svg"
+                },
+                
+                {
+                  "name":"Node.js",
+                  "src":"assets/images/node.svg"
+                },
+                {
+                  "name":"React",
+                  "src":"assets/images/react.svg"
+                }
+              ],
+              "workmenu":[
+                {
+                  "name":"16-Bit Jeopardy",
+                  "src":"assets/images/jeopardy.svg",
+                  "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
+                  "description":"React,JS,CSS"
+                },
+                {
+                  "name":"BrainApp Facial Recognition",
+                  "src":"assets/images/brain.svg",
+                  "href":"https://ktaulman.github.io/brainapp/",
+                  "description":"React, JS,Clarifai API"
+                }
+              ],
+              "bottombar":
+                { 
+                  "email":"kevin.taulman@icloud.com",
+                  "phone":"408-550-5763",
+                  "address":"3300 Cascade Rd. SW,Atlanta,GA 30311"
+                  
+                }
+  }
