@@ -13,9 +13,10 @@ const Menu=(props)=>{
         let renderIcons=data.map((el,i)=>{
             return(
                 <Icon 
+                    key={el.name+i}
                     src={el.src}
                     name={el.name}
-                    onClick={el.href?()=>onClick(el.href):''}
+                    onClick={onClick?()=>onClick(el.href):undefined}
                     description={el.description}
                     className={className?className:''}
                 />

@@ -4,9 +4,9 @@ import React from 'react';
 
 const InfoCard=(props)=>{
     if(props.data){
-        let renderCard=props.data.map(el=>{
+        let renderCard=props.data.map((el,i)=>{
             return(
-                <div className="infocard" onClick={()=>props.onClick(el.href||'')}>
+                <div key={el.name +i}className={`infocard ${props.className}`}onClick={(el.href)?()=>props.onClick(el.href):undefined}>
                 <img
                     className="infocard__photo"
                     src={el.src}

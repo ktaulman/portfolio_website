@@ -2,31 +2,21 @@
               "navbar":[
                 { 
                 "name":"Work",
-                "className":"navbar__link",
+                "className":"navbar__link animated bounceInDown",
                 "href":"https://github.com/ktaulman"
                 },
                 { 
                 "name":"Resume",
-                "className":"navbar__link",
-                "href":"https://drive.google.com/open?id=1GggusX9tkaC0D-wuaFB29MdMBA2VaCJ6"
-                },
-                {
-                "name":"About Me",
-                "className":"navbar__link",
-                "href":"https://drive.google.com/open?id=1GggusX9tkaC0D-wuaFB29MdMBA2VaCJ6"
-                },
-                {
-                "name":"Contact", 
-                "className":"navbar__link",
-                "href":"#contactform"         
+                "className":"navbar__link animated bounceInDown",
+                "href":"https://drive.google.com/file/d/16jj6-WfpM3jo_0jI7cn51IPCQTaHFAuV/view?usp=sharing"
                 }
               ],
             "infocardkevin":[
               {
                "src":"/assets/images/kevin.jpg",
                 "title":"Kevin Taulman",
-                "tagline":"Web Developer",
-                "text":"Studying and Self-Teaching Full-Stack"
+                "tagline":"Software Engineer",
+                "text":"Studying and Self-Teaching Full-Stack Web Development"
               }
             ],
             "menu":[
@@ -76,6 +66,10 @@
                 {
                   "name":"React",
                   "src":"assets/images/react.svg"
+                },
+                {
+                  "name":"PostgreSQL",
+                  "src":"assets/images/postgresql.svg"
                 }
               ],
               "workmenu":[
@@ -83,20 +77,20 @@
                   "name":"16-Bit Jeopardy",
                   "src":"assets/images/jeopardy.svg",
                   "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
-                  "description":"React,JS,CSS"
+                  "description":"React, JS, CSS"
                 },
                 {
-                  "name":"BrainApp Facial Recognition",
+                  "name":"BrainApp",
                   "src":"assets/images/brain.svg",
-                  "href":"https://ktaulman.github.io/brainapp/",
-                  "description":"React, JS,Clarifai API"
+                  "href":"https://ztm-brainapp.herokuapp.com/",
+                  "description":"React, JS, Clarifai API, Express, PostgresSQL"
                 }
               ],
               "bottombar":
                 { 
                   "email":"kevin.taulman@icloud.com",
                   "phone":"408-550-5763",
-                  "address":"3300 Cascade Rd. SW,Atlanta,GA 30311"
+                  "address":"Atlanta , GA 30311"
                   
                 }
   }

@@ -1,6 +1,0 @@
-export const jsonData=
-[
-    "navbar":{
-        
-    },
-];

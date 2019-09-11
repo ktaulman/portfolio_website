@@ -5,17 +5,17 @@ const BottomBar=(props)=>{
         if(props.data){
             const {email,phone,address}=props.data;
             return(
-                <address className='bottombar'>
+                <div className='bottombar'>
                     <p className='bottombar__item'>{email}</p>
                     <p className='bottombar__item'>{phone}</p>
                     <p className='bottombar__item'>{address}</p>
-            </address>
+            </div>
                 )
             
         }
         else {
             return(
-                <address className='bottombar'></address>
+                <div className='bottombar'></div>
             )
         }
     }

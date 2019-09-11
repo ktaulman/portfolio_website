@@ -1,5 +1,9 @@
 import React from 'react';
 
+const pStyle={
+    color:'red',
+    textDecoration:'none'
+}
 
 const Icon= (props)=>{
     const {onClick,src,name,description,className}=props;

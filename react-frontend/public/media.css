@@ -18,8 +18,10 @@
 }
 
  /* iPhone 6/7 */
-@media (max-width:378px){
-
+@media (min-width:378px){
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+      }
 }
 
 
