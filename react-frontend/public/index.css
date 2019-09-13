@@ -15,7 +15,6 @@ main{
 .App{
     font-family:'Montserrat';
     width:100vw;
-    height:100vh;
 }
 .navbar{
     background:	#172888;
@@ -65,10 +64,7 @@ main{
     margin-top:15vh;
     z-index: 0;
 }
-main>div{
-    margin-top:45px;
-    margin-bottom:45px;
-}
+
 .infocard{
     display:flex;
     flex-direction:column;
@@ -113,10 +109,12 @@ main>div{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-evenly;
-    align-items:flex-end;
+    justify-content: center;
+    align-items: center;
     padding:6px;
-    width:55vw;
+    width:75vw;
+    margin-top:45px;
+    margin-bottom:45px;
 }
 .menu__icon{
    display:flex;
@@ -129,6 +127,7 @@ main>div{
    margin:5px;
    text-align:center;
    font-size:.8em;
+   flex-basis:33%;
 }
 
 
@@ -145,6 +144,7 @@ main>div{
     margin:0px;
     padding-bottom:5px;
     border-bottom:2px white solid;
+    max-width:110px;
  }
 
 
@@ -162,6 +162,9 @@ main>div{
     color:rgb(150, 145, 145);
  } 
  
+ .menu--override{
+    /*  */
+ }
 
  .bottombar{
     background:	#172888;

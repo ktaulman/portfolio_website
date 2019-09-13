@@ -1,27 +1,65 @@
 
 /* MEDIA QUERIES */
-@media (min-width:1030px){
-
+@media (min-width:1250px){
+  .navbar__link{
+    font-size:1.6rem;
+  }
+  .bottombar__item{
+    font-size: 1.0rem;
+  }
+  
 }
 
 /* MEDIA QUERIES */
 @media (max-width:1025px){
-
+  .menu{
+    width:75vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+  .menu__image{
+    max-width: 110px;
+  }
+ 
 }
 
 @media (max-width:770px){
-
+  .menu{
+    width:85vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__icon{
+    flex-basis:33%
+  }
+  .menu--override{
+    flex-basis:50%;
+  }
 }
 
 @media (max-width:420px){
-
+  .menu{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__icon{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .menu__title{
+    font-size:25px;
+  }
+  .menu__name{
+    font-size:18px;
+  }
 }
 
  /* iPhone 6/7 */
-@media (min-width:378px){
-    html {
-        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-      }
+@media (max-width:380px){
+ 
 }
 
 

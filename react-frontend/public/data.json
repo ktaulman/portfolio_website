@@ -73,24 +73,31 @@
                 }
               ],
               "workmenu":[
+              
                 {
-                  "name":"16-Bit Jeopardy",
+                  "name":"BrainApp Facial Recognition",
+                  "src":"assets/images/brain.svg",
+                  "href":"https://ztm-brainapp.herokuapp.com/",
+                  "description":"React, JS, Clarifai API, Node(Express), PostgresSQL "
+                },
+                {
+                  "name":"16-Bit Jeopardy Game",
                   "src":"assets/images/jeopardy.svg",
                   "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
                   "description":"React, JS, CSS"
                 },
                 {
-                  "name":"BrainApp",
-                  "src":"assets/images/brain.svg",
-                  "href":"https://ztm-brainapp.herokuapp.com/",
-                  "description":"React, JS, Clarifai API, Express, PostgresSQL"
+                  "name":"FlavorTown News",
+                  "src":"assets/images/guy.jpg",
+                  "href":"flavortown.herokuapp.com",
+                  "description":"(Work-In-Progress) Mobile-First/Responsive CSS, APIs, Node(Express), React, JS"
                 }
               ],
               "bottombar":
                 { 
                   "email":"kevin.taulman@icloud.com",
                   "phone":"408-550-5763",
-                  "address":"Atlanta , GA 30311"
+                  "address":"Atlanta , GA"
                   
                 }
   }

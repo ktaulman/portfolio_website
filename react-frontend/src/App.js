@@ -78,12 +78,12 @@ class App extends React.Component{
               <Menu 
                 data={menu}
                 onClick={(x)=>this.openTab(x)}
-                className="--color-hover"
+                className="--color-hover "
               />
               <Menu
                 data={skillsmenu}
                 title="Skills"
-                className='--no-underline'
+                className='--no-underline menu--override'
               />
               <Menu
                 data={workmenu}
