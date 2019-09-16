@@ -89,7 +89,7 @@
                 {
                   "name":"FlavorTown News",
                   "src":"assets/images/guy.jpg",
-                  "href":"flavortown.herokuapp.com",
+                  "href":"https://flavortown.herokuapp.com",
                   "description":"(Work-In-Progress) Mobile-First/Responsive CSS, APIs, Node(Express), React, JS"
                 }
               ],
