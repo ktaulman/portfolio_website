@@ -85,12 +85,6 @@
                   "src":"assets/images/jeopardy.svg",
                   "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
                   "description":"React, JS, CSS"
-                },
-                {
-                  "name":"FlavorTown News",
-                  "src":"assets/images/guy.jpg",
-                  "href":"https://flavortown.herokuapp.com",
-                  "description":"(Work-In-Progress) Mobile-First/Responsive CSS, APIs, Node(Express), React, JS"
                 }
               ],
               "bottombar":
