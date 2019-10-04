@@ -8,7 +8,7 @@
                 { 
                 "name":"Resume",
                 "className":"navbar__link animated bounceInDown",
-                "href":"https://drive.google.com/file/d/16jj6-WfpM3jo_0jI7cn51IPCQTaHFAuV/view?usp=sharing"
+                "href":"https://docs.google.com/document/d/1bE7uOB-hGm_9L2BxH0CKEm49CL9aZtQw554JIw8lq-c/edit"
                 }
               ],
             "infocardkevin":[
@@ -85,6 +85,12 @@
                   "src":"assets/images/jeopardy.svg",
                   "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
                   "description":"React, JS, CSS"
+                },
+                {
+                  "name":"FlavorTown News",
+                  "src":"assets/images/guy.jpg",
+                  "href":"https://flavortown.herokuapp.com/",
+                  "description":"React, JS, Flexbox, Node"
                 }
               ],
               "bottombar":
