@@ -1,4 +1,4 @@
-/* MAIN INDEX.HTML FILE  */
+/* MAIN INDEX.HTML FILE AREA */
 html{
     font-size: calc(11px + (26- 11) * ((100vw - 320px) / (1230 - 320)));
     text-transform:uppercase;
