@@ -61,20 +61,20 @@ class App extends React.Component{
               className="navbar__link"
               onClick={()=>this.onRouteChange("resume")}
             />
-            <Route
+            {/* <Route
               name="About Me"
               className="navbar__link"
               href="#"
               onClick={()=>this.onRouteChange("aboutme")}
-            />
+            /> */}
           </nav>
           {
             this.state.route==="home"?
               <main className="animated fadeIn">
-              <InfoCard 
+              {/* <InfoCard 
                 data={infocardkevin}
                 className=""
-              />
+              /> */}
               <Menu 
                 data={menu}
                 onClick={(x)=>this.openTab(x)}
@@ -96,9 +96,9 @@ class App extends React.Component{
              (
                this.state.route==='resume'?
                   <Resume />
-               :
-               this.state.route==='aboutme'?
-               <AboutMe />
+               //:
+              // this.state.route==='aboutme'?
+               //<AboutMe />
              :
               <div></div>    
              )

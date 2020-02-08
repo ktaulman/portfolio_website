@@ -32,14 +32,9 @@
                     "src":"assets/images/github.svg",
                     "href":"https://github.com/ktaulman"
                   },
+                 
                   {
                     "id":"3",
-                    "name":"Tweets",
-                    "src":"assets/images/twitter.svg",
-                    "href":"https://twitter.com/kevintaulman?lang=en"
-                  },
-                  {
-                    "id":"4",
                     "name":"Resume",
                     "src":"assets/images/resume.svg",
                     "href":"https://drive.google.com/file/d/1Wwr3Ls6boLP_OGR9yVpQHA5DSRxYGGec/view?usp=sharing"
