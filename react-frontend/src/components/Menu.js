@@ -25,9 +25,11 @@ const Menu=(props)=>{
         
 
         return(
-            <div className ="menu">
+            <div className="menu">
             {renderTitle}
-            {renderIcons}
+            
+                {renderIcons}
+            
             </div>
         )
     }
