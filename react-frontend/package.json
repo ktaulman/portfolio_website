@@ -24,7 +24,5 @@
     "extends": "react-app"
   },
   "browserslist": [],
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
-  }
+  "devDependencies": {}
 }
