@@ -44,23 +44,24 @@ class App extends React.Component{
     return(
        <div className="App ">
           <nav className="navbar">
+         
             <Logo 
               className="navbar__logo"
               src={logo}
               alt="Portfolio Logo"
             />
         
-            <Route
+            {/* <Route
               name="Home"
               className="navbar__link"
               onClick={()=>this.onRouteChange("home")}
-            />
+            /> */}
            
-            <Route
-              name="Resume"
+            <a
               className="navbar__link"
-              onClick={()=>this.onRouteChange("resume")}
-            />
+             href='./resume.pdf'
+             alt='resume_download'
+            >Resume</a>
             {/* <Route
               name="About Me"
               className="navbar__link"
@@ -71,19 +72,14 @@ class App extends React.Component{
           {
             this.state.route==="home"?
               <main className="animated fadeIn">
-              {/* <InfoCard 
+              <InfoCard 
                 data={infocardkevin}
                 className=""
-              /> */}
+              />
               <Menu 
                 data={menu}
                 onClick={(x)=>this.openTab(x)}
                 className="--color-hover "
-              />
-              <Menu
-                data={skillsmenu}
-                title="Skills"
-                className='--no-underline menu--override'
               />
               <Menu
                 data={workmenu}
@@ -91,6 +87,12 @@ class App extends React.Component{
                 className='--wL --color-hover' 
                 onClick={(x)=>this.openTab(x)}
               />
+              <Menu
+                data={skillsmenu}
+                title="Skills"
+                className='--no-underline menu--override'
+              />
+              
               </main>
               :
              (
