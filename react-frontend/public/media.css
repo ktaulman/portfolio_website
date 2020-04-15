@@ -1,24 +1,45 @@
 
 /* MEDIA QUERIES */
-@media screen and (min-width:1000px) and (max-width:2000px) {
+@media screen and (min-width:750px) and (max-width:2000px) {
+  html{
+    font-size:12px;
+  }
+  .menu__main,.menu__projects{
+    justify-content: space-evenly;
+    margin:80px 0px;
+  }
   .infocard__photo{
     max-width: 500px;
+  }
+
+  .menu__image{
+    max-width:200px;
+    height:185px;
   }
 }
 
 /* MEDIA QUERIES */
 /* IPAD HORIZONTAL */
-@media (max-width:1025px){
 
-}
 /* IPAD VERTICAL */
-@media (max-width:770px){
-
+@media screen and (max-width:749px){
+  html{
+    font-size:10px;
+  }
+  .navbar__logo{
+   
+  }
+  .menu__main{
+    justify-content: space-evenly;
+  }
+  .menu__projects{
+    justify-content: space-evenly;
+  }
 }
 
 /* IPHONES AND MIBLE */
 /* Iphone 6,7,8 PLUS */
-@media screen and (max-width:420px){
+@media screen and (max-width:500px){
   html{
     font-size:10px;
   }

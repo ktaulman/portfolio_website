@@ -34,7 +34,7 @@ body{
     z-index:10;
 }
 .navbar__logo{
-    height:50px;
+    height:8vh;
   }
 .navbar__link{
     color:white;
@@ -125,6 +125,8 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 /* Special Menu Selectors */
 .menu__skills .menu__icon{
@@ -166,7 +168,7 @@ body{
     margin:3px 0px;
     font-weight:bolder;
     letter-spacing:2px;
-    font-size:1.8rem;
+    font-size:2.0rem;
     
  } 
  .menu__description{

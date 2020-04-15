@@ -75,23 +75,23 @@ class App extends React.Component{
               <Menu 
                 data={menu}
                 onClick={this.openTab}
-                iconClassName=""
-                containerClassName="menu__main"
+                iconClassName="--hover"
+                containerClassName="menu__main "
                 imageClassName=''
               />
               <Menu
                 data={workmenu}
                 title="Projects"
-                iconClassName='' 
+                iconClassName='--hover' 
                 onClick={(x)=>this.openTab(x)}
-                containerClassName="menu__projects"
+                containerClassName="menu__projects "
                 imageClassName="--imgSize-medium"
               />
               <Menu
                 data={skillsmenu}
                 title="Skills"
-                iconClassName='--no-underline '
-                containerClassName="menu__skills"
+                iconClassName='--no-underline --hover" '
+                containerClassName="menu__skills" 
               />
               
               </main>

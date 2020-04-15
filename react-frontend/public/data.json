@@ -29,7 +29,7 @@
                   {
                     "id":"2",
                     "name":"Work",
-                    "src":"assets/images/github.png",
+                    "src":"assets/images/github.svg",
                     "href":"https://github.com/ktaulman"
                   },
                  
@@ -37,7 +37,7 @@
                     "id":"3",
                     "name":"Resume",
                     "src":"assets/images/resume.svg",
-                    "href":"https://drive.google.com/file/d/1Wwr3Ls6boLP_OGR9yVpQHA5DSRxYGGec/view?usp=sharing"
+                    "href":"/resume.pdf"
                   }
               ],
               "skillsmenu":[
