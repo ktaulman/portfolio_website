@@ -26,10 +26,9 @@ const InfoCard=(props)=>{
             )
         })
         return(
-            <div>
+            <>
                 {renderCard}
-             </div>
-
+            </>
         )}
         else{
             return(

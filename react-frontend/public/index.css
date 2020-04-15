@@ -1,21 +1,23 @@
 /* MAIN INDEX.HTML FILE AREA */
 html{
-    font-size: calc(11px + (26- 11) * ((100vw - 320px) / (1230 - 320)));
+    font-size:16px;
     text-transform:uppercase;
-    width:85vw;
+    width:100%;
 }
 address{
     font-style:none;
 }
-main{
-    animation-duration: 1s;
-    animation-delay: .5s;
-    
+body{
+    margin:0;
+   padding:0;
 }
+
+/* APP */
 .App{
     font-family:'Montserrat';
-    width:100vw;
+    width:100%;
 }
+/* FIXED NAVBAR */
 .navbar{
     background:	#172888;
     display:flex;
@@ -23,14 +25,16 @@ main{
     align-items:center;
     position:fixed;
     width:100%;
-    height:8vh;
+    height:10vh;
+    margin:0;
+    padding:0;
     top:0;
     left:0;
     right:100;
     z-index:10;
 }
 .navbar__logo{
-    height:75%;
+    height:50px;
   }
 .navbar__link{
     color:white;
@@ -39,7 +43,7 @@ main{
     text-transform: uppercase;
     animation-duration: 1s;
     animation-delay: 1s;
-    font-size:1rem;
+    font-size:2.1rem;
 
   }
 .navbar__link:hover{
@@ -47,32 +51,23 @@ main{
     transition: all .3s ease-in;
    text-decoration:underline;
 }
-button{
-    font-size: 1rem;
-    font-family: inherit;
-    background:none;
-    outline:none;
-    box-sizing:none;
-    border:none;
-    font: inherit
-}
-main{
+
+/* Main Body */
+.mainBody{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content: space-evenly;
     margin-top:15vh;
     z-index: 0;
+    animation-duration: 1s;
+    animation-delay: .5s;
 }
-
+/* INFOCARD */
 .infocard{
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    flex-basis:35vh;
-    flex-shrink:1;
-
+    width:100%;
 }
 
 .infocard__photo{
@@ -83,19 +78,19 @@ main{
 }
 
 .infocard__title{
-    text-decoration: underline;
+    font-weight: bolder;
     width: 90%;
     text-align:center;
-    margin:8px;
+    margin:4px 0px;
     font-weight:bold;
     letter-spacing: 2px;
-    font-size:1.1rem;
+    font-size:3.2rem;
 }
 .infocard__tagline{
     width: 75%;
     text-align:center;
-    margin:3px;
-    font-size:.9rem;
+    margin:3px 0px;
+    font-size:1.9rem;
 }
 .infocard__text{
     color:rgb(150, 145, 145);
@@ -105,38 +100,58 @@ main{
     font-size:.9rem;
 }
 
+/* MENUS */
 .menu{
+    width:100%;
+    margin:25px 0px;
+    padding:0;
+    
+}
+
+/* MENU SECTIONS */
+.menu__main{
+    display:flex;
+    justify-content:center;
+}
+
+.menu__projects{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    padding:6px;
-    width:75vw;
-    margin-top:45px;
-    margin-bottom:45px;
 }
+.menu__skills{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+/* Special Menu Selectors */
+.menu__skills .menu__icon{
+    flex-basis:20%;
+    flex-grow:1;
+}
+/* Default Classes for Menu  */
 .menu__icon{
    display:flex;
    flex-direction:column;
-   justify-content: baseline;
+   justify-content: center;
    align-items: center;
-   min-width:90px;
-   max-width:160px;
    height:auto;
-   margin:5px;
+   margin:5px 0px;
    text-align:center;
-   font-size:.8em;
-   flex-basis:30%;
+   flex-basis:20%;
 }
 
 
 .menu__title{
-    flex-basis:100%;
+    flex:1 0 auto;
+    width:100%;
     text-align:center;
-    letter-spacing:5px;
+    letter-spacing:16px;
     text-transform:uppercase;
-    font-size:1.2rem;
+    font-size:2.6rem;
+    margin:25px 0px;
 }
  .menu__image{
      width:auto;
@@ -144,28 +159,29 @@ main{
     margin:0px;
     padding-bottom:5px;
     border-bottom:2px white solid;
-    max-width:110px;
+    max-width:130px;
  }
 
-
  .menu__name{
-    margin:3px;
+    margin:3px 0px;
     font-weight:bolder;
     letter-spacing:2px;
-    font-size:.8rem;
+    font-size:1.8rem;
+    
  } 
  .menu__description{
-    margin:5px;
+    margin:5px 0px;
     letter-spacing:1px;
-    font-size:.7rem;
+    font-size:1.2rem;
     text-transform:capitalize;
     color:rgb(150, 145, 145);
  } 
- 
- .menu--override{
-    /*  */
- }
 
+
+ 
+
+
+/* BOTTOM BAR  */
  .bottombar{
     background:	#172888;
     display:flex;
@@ -175,6 +191,7 @@ main{
     bottom:100;
     left:0;
     text-decoration: none;
+    padding:20px 0px;
 }
 
 
@@ -182,7 +199,7 @@ main{
     color:white;
     word-wrap: break-word;
     padding:3px;
-    font-size:0.7rem;
+    font-size:1.8rem;
 }
 .--vertical{
     display:flex;
@@ -195,9 +212,7 @@ main{
 .--wM{
     width:150px;
 }
-.--wL{
-    max-width:350px;
-}
+
 .--font-black{
     color: black;
 }
@@ -231,29 +246,4 @@ main{
     cursor:pointer;
     
 }
-.resume{
-    min-height: 90vh;
-    background:red;
-}
-.aboutme{
-    width: 65vw;
-    font-style: normal;
-    text-transform: initial;
-    margin:15vh auto;
-}
-.iframe{
-    width:100%;
-    height:100%;
-}
 
-@media (max-width:700px){
-    .--document{
-        display:none;
-    }
-    .--resume-link{
-        font-size:3.0rem;
-    }
-    .resume{
-        min-height:90vh;
-    }
-}

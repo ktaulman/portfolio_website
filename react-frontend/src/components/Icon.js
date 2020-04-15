@@ -1,19 +1,14 @@
 import React from 'react';
 
-const pStyle={
-    color:'red',
-    textDecoration:'none'
-}
-
 const Icon= (props)=>{
-    const {onClick,src,name,description,className}=props;
+    const {onClick,src,name,description,className,imageClassName}=props;
     return(
         <div 
             className={`menu__icon ${className}`}
             onClick={onClick}
             >
             <img 
-                className="menu__image"
+                className={"menu__image"+" "+imageClassName}
                 src={src} 
                 alt=""
             />

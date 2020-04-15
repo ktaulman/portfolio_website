@@ -6,6 +6,7 @@ const BottomBar=(props)=>{
             const {email,phone,address}=props.data;
             return(
                 <div className='bottombar'>
+                    
                     <p className='bottombar__item'>{email}</p>
                     <p className='bottombar__item'>{phone}</p>
                     <p className='bottombar__item'>{address}</p>

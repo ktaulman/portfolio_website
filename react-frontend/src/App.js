@@ -67,7 +67,7 @@ class App extends React.Component{
             /> */}
           </nav>
          
-              <main className="animated fadeIn">
+              <main className="animated fadeIn mainBody">
               <InfoCard 
                 data={infocardkevin}
                 className=""
@@ -75,18 +75,23 @@ class App extends React.Component{
               <Menu 
                 data={menu}
                 onClick={this.openTab}
-                className="--color-hover "
+                iconClassName=""
+                containerClassName="menu__main"
+                imageClassName=''
               />
               <Menu
                 data={workmenu}
-                title="Work"
-                className='--wL --color-hover' 
+                title="Projects"
+                iconClassName='' 
                 onClick={(x)=>this.openTab(x)}
+                containerClassName="menu__projects"
+                imageClassName="--imgSize-medium"
               />
               <Menu
                 data={skillsmenu}
                 title="Skills"
-                className='--no-underline menu--override'
+                iconClassName='--no-underline '
+                containerClassName="menu__skills"
               />
               
               </main>
@@ -99,7 +104,7 @@ class App extends React.Component{
     )
    }
   
-   return(
+  return(
     <div>Loading</div>
   )
     

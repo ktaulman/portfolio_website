@@ -1,67 +1,82 @@
 
 /* MEDIA QUERIES */
-@media (min-width:1250px){
-  .navbar__link{
-    font-size:1.6rem;
+@media screen and (min-width:1000px) and (max-width:2000px) {
+  .infocard__photo{
+    max-width: 500px;
   }
-  .bottombar__item{
-    font-size: 1.0rem;
-  }
-  
 }
 
 /* MEDIA QUERIES */
+/* IPAD HORIZONTAL */
 @media (max-width:1025px){
-  .menu{
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
+
+}
+/* IPAD VERTICAL */
+@media (max-width:770px){
+
+}
+
+/* IPHONES AND MIBLE */
+/* Iphone 6,7,8 PLUS */
+@media screen and (max-width:420px){
+  html{
+    font-size:10px;
+  }
+
+   /*  */
+   .menu{
+     margin:10px 0px;
+   }
+  .menu__main{
+    justify-content: space-around;
+  }
+  .menu__projects{
+    flex-direction: column;
+  }
+
+  /* Special CSS Selectors */
+.menu__projects .menu__image{
+  height:185px;
+  width:235px;
+  max-width:235px;
+}
+.menu__skills .menu__icon{
+  flex-basis:30%;
+}
+
+  /* CSS Defaults */
+  .menu__icon{
+    
   }
   .menu__image{
-    max-width: 110px;
+    width:85px;
   }
  
-}
 
-@media (max-width:770px){
-  .menu{
-    flex-direction: row;
-  }
-  .menu__icon{
-    flex-basis:30%
-  }
-  .menu--override{
-    flex-basis:50%;
-  }
-}
 
-@media (max-width:420px){
-  .menu{
-    display:flex;
-    flex-direction:column;
+  /* Bottombar */
+  .bottombar{
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .menu__icon{
-    margin-top:10px;
-    margin-bottom:10px;
-  }
-  .menu__title{
-    font-size:25px;
-  }
-  .menu__name{
-    font-size:18px;
+    align-items:center;
+    height:auto;
+    padding:10px 0px;
+}
+  .bottombar__item{
+    margin:0;
   }
 }
 
  /* iPhone 6/7 */
-@media (max-width:380px){
- 
+@media screen and (max-width:380px){
+ html{
+   font-size:8px;
+ }
 }
+ 
 
 
 /* iPhone 5 */
-@media (max-width:325px){
+@media screen and (max-width:325px){
     
 }

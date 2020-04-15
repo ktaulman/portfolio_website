@@ -3,7 +3,7 @@ import Icon from './Icon'
 
 
 const Menu=(props)=>{
-    let {className,data,title,onClick}=props;
+    let {iconClassName,containerClassName,data,title,onClick,imageClassName}=props;
     if(data){
    
         let renderTitle=title?
@@ -18,14 +18,15 @@ const Menu=(props)=>{
                     name={el.name}
                     onClick={onClick?()=>onClick(el.href,el.name):undefined}
                     description={el.description}
-                    className={className?className:''}
+                    className={iconClassName?iconClassName:''}
+                    imageClassName={imageClassName}
                 />
             )
         })
         
 
         return(
-            <div className="menu">
+            <div className={`menu ${containerClassName}`}>
             {renderTitle}
             
                 {renderIcons}
