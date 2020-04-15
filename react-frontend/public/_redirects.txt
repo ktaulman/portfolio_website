@@ -1,4 +1,0 @@
-/home /
-/jeopardy https://ktaulman.github.io/JEOPARDY_GAME/
-/brainapp https://ztm-brainapp.herokuapp.com/
-/flavortown https://flavortown.herokuapp.com/

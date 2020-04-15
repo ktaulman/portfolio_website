@@ -3,11 +3,8 @@ import logo from './components/logo.svg';
 import InfoCard from './components/InfoCard';
 import Menu from './components/Menu';
 import BottomBar from './components/BottomBar';
-
 import Logo from './components/Logo';
-import Route from './components/Route';
-import Resume from './components/Resume';
-import AboutMe from './components/AboutMe'
+
 
 
 class App extends React.Component{
@@ -19,11 +16,11 @@ class App extends React.Component{
          }
   };
 
- openTab=(x)=>{
-    window.open(x,'_newtab');
+ openTab=(url,name)=>{
+   window.open(url,'_blank','',true).location.pathName='/app'
  };
  
-  componentWillMount(){
+  componentDidMount(){
     fetch('/data.json')
       .then(response=>response.json())
       .then(data=>{
@@ -38,9 +35,9 @@ class App extends React.Component{
  
   render(){
     if(this.state.data&&this.state.route){
+
       const {infocardkevin,menu,skillsmenu,workmenu,bottombar}=this.state.data;
-     
-  
+
     return(
        <div className="App ">
           <nav className="navbar">
@@ -69,8 +66,7 @@ class App extends React.Component{
               onClick={()=>this.onRouteChange("aboutme")}
             /> */}
           </nav>
-          {
-            this.state.route==="home"?
+         
               <main className="animated fadeIn">
               <InfoCard 
                 data={infocardkevin}
@@ -78,7 +74,7 @@ class App extends React.Component{
               />
               <Menu 
                 data={menu}
-                onClick={(x)=>this.openTab(x)}
+                onClick={this.openTab}
                 className="--color-hover "
               />
               <Menu
@@ -94,30 +90,19 @@ class App extends React.Component{
               />
               
               </main>
-              :
-             (
-               this.state.route==='resume'?
-                  <Resume />
-               //:
-              // this.state.route==='aboutme'?
-               //<AboutMe />
-             :
-              <div></div>    
-             )
-            
-          }
 
           <BottomBar 
             data={bottombar}
           />
       </div>
 
-    )}
-    else{
-      return(
-        <div>Loading</div>
-      )
-    }
+    )
+   }
+  
+   return(
+    <div>Loading</div>
+  )
+    
   }
 }
 

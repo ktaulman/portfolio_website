@@ -16,7 +16,7 @@ const Menu=(props)=>{
                     key={el.name+i}
                     src={el.src}
                     name={el.name}
-                    onClick={onClick?()=>onClick(el.href):undefined}
+                    onClick={onClick?()=>onClick(el.href,el.name):undefined}
                     description={el.description}
                     className={className?className:''}
                 />
