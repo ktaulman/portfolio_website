@@ -8,8 +8,8 @@ to="https://www.google.com"
 status=301
 
 [[redirects]]
-from='/flavortown'
-to ='https://flavortown.herokuapp.com/'
+from="/flavortown"
+to ="https://flavortown.herokuapp.com/index.html"
 status=200
 
 [[redirects]]
