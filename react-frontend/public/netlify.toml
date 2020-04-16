@@ -2,3 +2,8 @@
 from = "/home"
 to = "/index.html"
 status =200
+
+[[redirects]]
+from='/flavortown'
+to ='http://flavortown.herokuapp.com/index.html'
+status=200
