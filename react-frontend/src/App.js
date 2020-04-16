@@ -58,7 +58,7 @@ class App extends React.Component{
               className="navbar__link"
              href='./resume.pdf'
              alt='resume_download'
-            >Resume</a>
+            >Resume123</a>
             {/* <Route
               name="About Me"
               className="navbar__link"
