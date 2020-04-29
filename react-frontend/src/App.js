@@ -58,13 +58,7 @@ class App extends React.Component{
               className="navbar__link"
              href='./resume.pdf'
              alt='resume_download'
-            >Resume123</a>
-            {/* <Route
-              name="About Me"
-              className="navbar__link"
-              href="#"
-              onClick={()=>this.onRouteChange("aboutme")}
-            /> */}
+            >Resume</a>
           </nav>
          
               <main className="animated fadeIn mainBody">
