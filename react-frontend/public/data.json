@@ -92,14 +92,8 @@
                 {
                   "name":"BrainApp Facial Recognition",
                   "src":"assets/images/brain.svg",
-                  "href":"https://ztm-brainapp.herokuapp.com/",
+                  "href":"http://brainapp.kevintaulman.com",
                   "description":"React, JS, Clarifai API, Node(Express), PostgresSQL "
-                },
-                {
-                  "name":"16-Bit Jeopardy Game",
-                  "src":"assets/images/jeopardy.svg",
-                  "href":"https://ktaulman.github.io/JEOPARDY_GAME/",
-                  "description":"React, JS, CSS"
                 },
                 {
                   "name":"FlavorTown News",
